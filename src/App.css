@@ -19,6 +19,12 @@
   color: white;
 }
 
+.Filler {
+  height: 100%;
+  width: 100%;
+  background-color: #9942E5;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -30,4 +36,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Tagline {
+  font-family: Nunito;
 }
