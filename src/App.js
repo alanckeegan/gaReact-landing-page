@@ -7,15 +7,25 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div>
+
       <div className="App">
+        <div className="TopFiller">
+
+        </div>
         <img src={logo} alt="logo" />
-        <h1 className="Tagline">find out if they like you back</h1>
-        <button> Button </button>
+        <h3 className="Tagline">find out if they like you back</h3>
+        <div className="Filler">
+          <h1 className= "NunitoWhite">Enter your email to join our beta!</h1>
+          <form>
+            <label className= "NunitoWhite">
+              Email:
+              <input type="text" name="name" />
+            </label>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
-      <div className="Filler">
-      </div>
-      </div>
+
 
 
 
