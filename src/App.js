@@ -4,21 +4,21 @@ import {ThemeProvider} from "styled-components";
 import { Button } from 'reactstrap';
 import logo from './assets/keenLogo.png';
 import './App.css';
-import topFiller from "./components/topFiller";
-//you are not importing topFiller or tagline because it was never exported properly
-import tagline from "./components/tagline"
+import TopFiller from "./components/TopFiller";
+import Filler from "./components/Filler";
+import Tagline from "./components/Tagline"
+import NunitoWhite from "./components/NunitoWhite"
 
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="TopFiller">
-        </div>
+        <TopFiller></TopFiller>
         <img src={logo} alt="logo" />
-        <h3 className="Tagline">find out if they like you back</h3>
-        <div className="Filler">
-          <h1 className= "NunitoWhite">Enter your email to join our beta!</h1>
+        <Tagline>find out if they like you back</Tagline>
+          <Filler>
+            <NunitoWhite>Enter your email to join our beta!</NunitoWhite>
           <form>
             <label className= "NunitoWhite">
               Email:
@@ -26,7 +26,8 @@ class App extends Component {
             </label>
             <input type="submit" value="Submit" />
           </form>
-        </div>
+        </Filler>
+
       </div>
     );
   }
