@@ -5,6 +5,7 @@ import { Button } from 'reactstrap';
 import logo from './assets/keenLogo.png';
 import './App.css';
 import topFiller from "./components/topFiller";
+//you are not importing topFiller or tagline because it was never exported properly
 import tagline from "./components/tagline"
 
 
