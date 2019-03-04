@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
+import {ThemeProvider} from "styled-components";
 
 import { Button } from 'reactstrap';
 import logo from './assets/keenLogo.png';
 import './App.css';
+import topFiller from "./components/topFiller";
+import tagline from "./components/tagline"
+
 
 class App extends Component {
   render() {
     return (
-
       <div className="App">
         <div className="TopFiller">
-
         </div>
         <img src={logo} alt="logo" />
         <h3 className="Tagline">find out if they like you back</h3>
@@ -25,11 +27,6 @@ class App extends Component {
           </form>
         </div>
       </div>
-
-
-
-
-
     );
   }
 }
