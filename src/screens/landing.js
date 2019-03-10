@@ -8,12 +8,17 @@ import TopFiller from "../components/TopFiller";
 import Filler from "../components/Filler";
 import Tagline from "../components/Tagline"
 import NunitoWhite from "../components/NunitoWhite"
+import ListBox from "../components/ListBox"
+import ListItem from "../components/ListItem"
+
+// const sampleList = [{firstName: 'Lucia', lastName: 'Stacey', initials: 'LS', photo: '', } ]
 
 
-export default class landing extends Component {
+
+export default class Landing extends Component {
   render() {
     return (
-      <div>
+      <div className="App">
         <TopFiller></TopFiller>
         <img src={logo} alt="logo" />
         <Tagline>find out if they like you back</Tagline>
@@ -26,6 +31,16 @@ export default class landing extends Component {
             </label>
             <input type="submit" value="Submit" />
           </form>
+          <ListBox>
+          <ListItem
+            firstName="Peter"
+            lastName="Smith"
+            />
+            <ListItem
+              firstName="Jason"
+              lastName="McJason"
+              />
+          </ListBox>
         </Filler>
 
       </div>
